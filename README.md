@@ -1,3 +1,22 @@
+# My modifications :
+
+This is a firmware for the SKR V1.4 Turbo with the Alfawise U30 Pro/Longer LK4 Pro. It uses the SKR v1.4 Turbo with the TFT-E3 V3.0 and TMC2209, aswell as a BL-Touch.
+
+## **/!\ Warning /!\ :**
+
+On the original configuration the endstops are connected with NO/C, they are off by default and on when pressed. If one of them fails the motherboard wont know and homing will result in the motors turning indefiniletly and crashing the carriages.
+
+**You need to either modify the firmware or modify the endstops, or else you will break your printer!**
+
+I changed them to connect with COM and NC by simply moving the wires on the the plug behind each endstop, so the firmware is set to reflect that change.
+
+## Notes
+
+* Motors are 1.5A (42BGYH40H-2-19D)
+* Using classic Jerk
+#
+#
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
