@@ -2,6 +2,7 @@ name: ✨ Request a feature
 description: Request a new Marlin Firmware feature
 title: "[FR] (feature summary)"
 labels: 'T: Feature Request'
+issue_body: true
 body:
   - type: markdown
     attributes:
@@ -38,7 +39,9 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: markdown
     attributes:
-      label: Additional context
-      description: Add any other context or screenshots about the feature request here.
+      value: >
+        **Additional context**
+
+        Add any other context or screenshots about the feature request here.
