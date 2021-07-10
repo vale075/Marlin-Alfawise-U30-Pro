@@ -362,7 +362,7 @@
  * Enable and connect the power supply to the PS_ON_PIN.
  * Specify whether the power supply is active HIGH or active LOW.
  */
-//#define PSU_CONTROL
+#define PSU_CONTROL
 #define PSU_NAME "5V(pi) + 24V(psu)"
 
 #if ENABLED(PSU_CONTROL)
