@@ -369,7 +369,7 @@
   #define PSU_ACTIVE_STATE HIGH      // Set 'LOW' for ATX, 'HIGH' for X-Box
 
   #define PSU_DEFAULT_OFF         // Keep power off until enabled directly with M80
-  #define PSU_POWERUP_DELAY 100   // (ms) Delay for the PSU to warm up to full power
+  #define PSU_POWERUP_DELAY 1000   // (ms) Delay for the PSU to warm up to full power
 
   //#define PSU_POWERUP_GCODE  "M355 S1"  // G-code to run after power-on (e.g., case light on)
   //#define PSU_POWEROFF_GCODE "M355 S0"  // G-code to run before power-off (e.g., case light off)
