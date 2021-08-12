@@ -13,8 +13,10 @@ I changed them to connect with COM and NC by simply moving the wires on the the 
 ## Notes
 
 * Motors are 1.5A (42BGYH40H-2-19D)
-* Using classic Jerk with linear advance (no junction deviation nor S-Curve)
-* Extruder 2 (HEATER_0) is used has FAN1_PIN to control the extruder fan (because my setup has only one extruder)
+* Using classic Jerk ~~with linear advance~~ (disabled for now thinking about switching to klipper)
+* no junction deviation ([because useless with a decoupled x and y gantry](https://www.reddit.com/r/3Dprinting/comments/ccvn0z/is_junction_deviation_better_than_using_normal/etqly92?utm_source=share&utm_medium=web2x&context=3))
+* no S-Curve (because incompatible with linear advance)
+* Extruder 2 (HEATER_0) is used has FAN1_PIN to control the extruder fan (because my setup has only one extruder, and makes it able to automaticelly switch fan off when the temps are low, below 50°C)
 #
 #
 #
